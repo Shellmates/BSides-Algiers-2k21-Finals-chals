@@ -11,7 +11,7 @@ fi
 
 secret=$(cat secret)
 
-if [[ "$secret" = *" "* ]] ; then  
+if test !"$secret" = *" "* ; then  
     echo "What have you done to my secret!"
     exit 1 
 fi
