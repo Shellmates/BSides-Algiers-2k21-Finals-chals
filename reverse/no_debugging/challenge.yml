@@ -1,0 +1,37 @@
+name: "No Debugging"
+author: "Redouane"
+author_link: "https://red0xff.github.io/about/"
+
+category: reverse
+
+difficulty: hard
+
+description: |
+  > Don't debug this, just give up already. Don't say I didn't warn you.  
+  **Author** : Redouane
+
+flags:
+  - shellmates{aghhhhhh_x86}
+
+topics:
+  - x86
+  - Linux
+
+tags:
+  - Antidebug
+
+files:
+  - no_debugging
+
+# TODO or to check before deployment
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 8
+    minimum: 50
+
+state: visible
+
+version: "0.1"

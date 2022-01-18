@@ -1,0 +1,17 @@
+{
+  "name": "another-note-app",
+  "version": "1.0.0",
+  "description": "Another note app",
+  "main": "index.js",
+  "author": "chenx3n",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "puppeteer": "^10.4.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

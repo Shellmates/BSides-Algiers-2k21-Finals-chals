@@ -1,0 +1,31 @@
+name: "guesser"
+author: "Ouxs"
+author_link: "https://github.com/ouxs-19"
+
+category: linux
+difficulty: medium
+
+description: |
+  > For me personally, having good guessing skills is essential for a CTF player.  
+  > So let's test your skills.  
+
+  **Author** : Ouxs
+
+connection_info: nc linux.ctf.shellmates.club 1201
+
+image: gcr.io/glowing-reserve-336013/guesser
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 8
+  minimum: 50
+
+flags:
+  - shellmates{W3_H4v3_a_B4SH_G3niu5_RIG|-|7_H3R3}
+
+state: visible
+
+version: "0.1"

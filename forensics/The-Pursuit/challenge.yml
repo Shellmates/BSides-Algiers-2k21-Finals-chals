@@ -1,0 +1,52 @@
+# NOTE: carefully read the comments
+#
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+#
+name: "The Pursuit"
+author: "Elghazali"
+author_link: "https://github.com/Elghazali-99"
+# Challenge category (pwn, web, reverse, crypto, forensics, linux, programming, misc)
+category: forensics
+# Challenge difficulty (easy, ezmed, medium, medhard, hard, extreme)
+difficulty: medium
+# Challenge description goes here
+# You can write markdown in it
+# Notes:
+# - for multi-line descriptions, make sure to add 2 spaces at the end of each line so that descriptions are actually displayed in multiple lines
+# - make sure to prepend the description with ">"
+# - always add the author line in the description (because CTFd doesn't add the author in the challenge description)
+description: |
+  > There were two guards on the door, four cameras, we set up all the requirements for security. Nonetheless, the President's computer was tempered by someone...   
+  > Oh! I Forgot, Luckily we continuously keep the Network Activity Logs to protect against some malicious activity.  
+  > Show off your skills and bring out the evidence!  
+
+  **Author** : Elghazali
+flags:
+  # The flag should match this pattern: ^shellmates{[A-Za-z0-9_@><:\.\-\+\$#!]{12,}}$
+  # 1. It can have any alphanumeric characters in addition of the following
+  #    special characters (separated by comma): _, @, >, <, :, ., -, +, $, #, !
+  # 2. The string inside the flag format should be at least 12 characters long and
+  #    hard to guess.
+  - shellmates{Y0U_w0n_th3_pur5u1t}
+
+# Settings used for Dockerfile deployment
+# If not used, remove or set to null
+# image: image_name
+
+
+files:
+  - ./Logs.pcapng
+
+# DO NOT CHANGE
+#
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 8
+    minimum: 50
+state: hidden
+version: "0.1"

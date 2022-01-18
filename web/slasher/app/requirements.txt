@@ -1,0 +1,5 @@
+flask
+Werkzeug
+python-dotenv
+bcrypt
+uwsgi

@@ -1,0 +1,40 @@
+name: "MathBot"
+author: "m0kr4n3"
+author_link: "https://github.com/m0kr4n3"
+
+category: programming
+difficulty: medium
+
+description: |
+  > Introducing MathBot! Relive the classic netcat speed challenges but with a Discord bot this time!  
+  > Can you solve all math questions in the required time?  
+
+  Invite the bot to your Discord server with the OAuth2 link below  
+
+  **Author** : m0kr4n3
+
+connection_info: https://discord.com/api/oauth2/authorize?client_id=884230099426246707&permissions=10240&scope=bot
+
+image: gcr.io/glowing-reserve-336013/mathbot
+
+value: 500
+type: dynamic
+
+tags:
+  - misc
+  - discord bot
+
+extra:
+  initial: 500
+  decay: 8
+  minimum: 50
+
+flags:
+  - shellmates{diScORD-1s-TH3-B3st-$oC1AL-M3d1a}
+
+files:
+  - ./challenge/challenge.py
+
+state: visible
+
+version: "0.1"

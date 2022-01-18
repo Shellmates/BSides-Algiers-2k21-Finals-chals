@@ -1,0 +1,34 @@
+name: "Signer"
+author: "Haithem"
+author_link: "https://github.com/HaithemLamri"
+
+category: crypto
+difficulty: ezmed
+
+description: |
+  > There is a lot of famous digital signature algorithms across the cryptography community,
+  > but they are vulnerable. So I created a new algorithm, can you break it ?!  
+
+  **Author** : Haithem
+
+connection_info: nc crypto.ctf.shellmates.club 1801
+
+image: gcr.io/glowing-reserve-336013/signer
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 8
+  minimum: 50
+
+flags:
+  - shellmates{4lg3br4_15_5o_co0o0l}
+
+files:
+  - challenge/challenge.py
+
+state: visible
+
+version: "0.1"

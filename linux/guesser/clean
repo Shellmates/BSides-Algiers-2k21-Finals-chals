@@ -1,0 +1,36 @@
+#!/bin/bash
+
+FORBID="guess run secret flag.txt .bashrc"
+
+/bin/rm -rf /tmp/*
+/bin/rm -rf /var/tmp/*
+
+if [[  -d /home/ctf ]]; then
+	/bin/ls /home/ctf | while read f; do 
+	check=1 
+		for d in $FORBID; do
+			if [[ "$d" == "$f" ]]; then
+	  			check=0;
+			fi
+	done
+		if [[ $check -eq 1 ]] ; then 
+			/bin/rm -rf "/home/ctf/$f"
+		fi 
+		
+	done 
+fi
+
+if [[  -d /home/linus ]]; then
+	/bin/ls /home/linus | while read f; do 
+	check=1 
+		for d in $FORBID; do
+			if [[ "$d" == "$f" ]]; then
+	  			check=0;
+			fi
+	done
+		if [[ $check -eq 1 ]] ; then 
+			/bin/rm -rf "/home/linus/$f"
+		fi 
+		
+	done 
+fi

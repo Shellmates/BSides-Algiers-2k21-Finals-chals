@@ -1,0 +1,30 @@
+name: "XeXe"
+author: "chenx3n"
+author_link: "https://github.com/malikDaCoda"
+
+category: web
+difficulty: medhard
+
+description: |
+  > Simple stupid app.  
+
+  **Note** : Flag is in the `.env` file of the app  
+
+  **Author** : chenx3n
+
+connection_info: http://xexe.web.ctf.shellmates.club
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 8
+  minimum: 50
+
+flags:
+  - shellmates{xx3_XX3_xXE_Xx3_xX3}
+
+state: visible
+
+version: "0.1"

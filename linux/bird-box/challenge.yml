@@ -1,0 +1,33 @@
+name: "bird-box"
+author: "Ouxs"
+author_link: "https://github.com/ouxs-19"
+
+category: linux
+difficulty: medium
+
+description: |
+  > Do you need to see to know what's there ?  
+  > The flag is at : /Flag  
+
+  **Author** : Ouxs
+
+connection_info: nc linux.ctf.shellmates.club 1200
+
+image: gcr.io/glowing-reserve-336013/bird-box
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 8
+  minimum: 50
+
+flags:
+  - shellmates{FiN3_I_WIlL_D0_I7_BLiNdLyy}
+
+tags:
+  - blind
+
+state: visible
+version: "0.1"

@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div>
+  <h2>Uploaded files</h2>
+  {% if files %}
+    <ul>
+      {% for file in files %}
+	<li>
+	  <a href="/?filename={{ file['enc_filename'] }}">{{ file['filename'] }}</a>
+	</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No files uploaded</p>
+  {% endif %}
+</div>
+
+<div>
+  <h2>Upload file</h2>
+
+  <form class="needs-validation" action="/upload" method="POST" novalidate autocomplete="off" enctype="multipart/form-data">
+    <div class="form-group w-25">
+      <label for="inputFilename">Filename</label>
+      <input name="filename" class="form-control" id="inputFilename" placeholder="Enter filename" required>
+      <div class="invalid-feedback">Please enter filename</div>
+    </div>
+    <div class="form-group custom-file ml-1 col-md-6 mt-2">
+      <label class="custom-file-label" for="inputAttachment">Choose file</label>
+      <input name="file" type="file" class="form-control-file custom-file-input" id="inputAttachment">
+    </div>
+    <div class="form-group col-md-12 mt-3">
+      <button type="submit" class="btn btn-primary my-1">Upload</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

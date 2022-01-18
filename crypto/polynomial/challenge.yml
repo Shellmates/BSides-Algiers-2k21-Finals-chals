@@ -1,0 +1,34 @@
+name: "Polynomial"
+author: "Haithem"
+author_link: "https://github.com/HaithemLamri"
+
+category: crypto
+difficulty: hard
+
+description: |
+  > After taking some courses in cryptography, I built my own crypto algorithm.  
+  > It seems secure, doesn't it?  
+
+  **Author** : Haithem
+
+connection_info: nc crypto.ctf.shellmates.club 1802
+
+image: gcr.io/glowing-reserve-336013/polynomial
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 8
+  minimum: 50
+
+flags:
+  - shellmates{___Lagrange__w4s__4__G3n1us___}
+
+files:
+  - challenge/challenge.py
+
+state: visible
+
+version: "0.1"

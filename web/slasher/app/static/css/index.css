@@ -1,0 +1,32 @@
+.center-div {
+  margin: 0 auto;
+  width: 90%;
+}
+
+a, a:hover {
+  color: #242a30 !important;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+.post-details-card {
+  max-height: 36rem;
+  max-width: 30rem;
+}
+
+.post-card {
+  width: 21rem;
+  max-height: 18rem;
+}
+
+#logo {
+  max-height: 40px;
+  max-width: 40px;
+}

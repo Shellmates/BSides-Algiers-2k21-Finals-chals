@@ -1,0 +1,37 @@
+name: "FreeNote"
+author: "hfz1337"
+author_link: "https://github.com/hfz1337"
+
+category: pwn
+difficulty: hard
+
+description: |
+  > OneNote started annoying me, so I developed FreeNote!  
+  > Have fun creating & deleting² your notes :)  
+
+  **Author**: hfz1337
+
+connection_info: nc pwn.ctf.shellmates.club 1500
+
+image: gcr.io/glowing-reserve-336013/freenote
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 8
+  minimum: 50
+
+flags:
+  - shellmates{ev3n_SafE_LINkinG_c4N'T_StOP_us!}
+
+files:
+  - ./dist/freenote
+  - ./dist/libc-2.32.so
+  - ./dist/ld-2.32.so
+
+
+state: visible
+
+version: "0.1"

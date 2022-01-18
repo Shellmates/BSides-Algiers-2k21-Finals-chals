@@ -1,0 +1,39 @@
+name: "Unbreakable_crypto"
+author: "m0kr4n3"
+author_link: "https://github.com/m0kr4n3"
+
+category: web
+difficulty: hard
+
+description: |
+  > I made an admin bot for checking tickets in train stations,
+  > since the crypto behind the transfer of data is robust and
+  > there is only one controlable input for the users, we're 100% secure  
+
+  **Author :** m0kr4n3
+
+connection_info: http://unbreakable-crypto.web.ctf.shellmates.club
+
+image: gcr.io/glowing-reserve-336013/unbreakable-crypto
+
+value: 500
+type: dynamic
+
+tags:
+  - crypto
+  - web
+
+extra:
+  initial: 500
+  decay: 8
+  minimum: 50
+
+flags:
+  - shellmates{IF_Y0u_DidN't_uS3_B1t_Fl1pP1NG_atT4cK_0V3r_mUlt1_bl0CkS_th4N_PrOb4BLy_iT'S_4n_UnintEndeD_s0LUt10N}
+
+files:
+ - ./unbreakable_crypto.zip
+
+state: visible
+
+version: "0.1"

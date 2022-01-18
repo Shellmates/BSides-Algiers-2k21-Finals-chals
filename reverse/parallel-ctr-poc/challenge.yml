@@ -1,0 +1,26 @@
+name: "Parallel CTR PoC"
+author: "red0xff"
+author_link: "https://red0xff.github.io/about/"
+
+category: reverse
+difficulty: ezmed
+
+description: |
+  > Because hiding secrets in client-side applications is always a bad idea  
+
+  **Author** : Redouane
+flags:
+  - shellmates{encrypt=decrypt_in_ctr_m0de}
+
+files:
+  - challenge
+  
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 8
+    minimum: 50
+
+state: visible
+version: "0.1"

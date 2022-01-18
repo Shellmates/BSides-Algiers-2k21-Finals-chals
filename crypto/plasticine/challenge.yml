@@ -1,0 +1,41 @@
+name: "Plasticine"
+author: "Ayoub"
+author_link: "https://github.com/youben11"
+
+category: crypto
+
+difficulty: ezmed
+
+description: |
+  > Baginja has been reading about post-quantum security recently, 
+  > so he wanted to prove himself by challenging you to decrypt 
+  > the flag, and has spent quite some time searching for the right 
+  > parameters to use. However, his way of thinking isn't 
+  > post-quantum yet, can you find what he did wrong?  
+
+  **Author** : Ayoub
+
+flags:
+  - shellmates{rlw3_1s_fun__y0u_c4n_p14y_w1th_1t}
+
+topics:
+  - homomorphic encryption
+
+tags:
+  - crypto
+
+files:
+  - plasticine.zip
+
+image: gcr.io/glowing-reserve-336013/plasticine
+
+connection_info: http://plasticine.crypto.ctf.shellmates.club
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 8
+    minimum: 50
+state: visible
+version: "0.1"

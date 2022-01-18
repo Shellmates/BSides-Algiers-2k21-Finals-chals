@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{ url_for('static',filename='styles/main.css') }}>
+    <title>Generate token</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Generate token</h1>
+        {% if not correct %}
+        <p>to get a VIP ticket, first you must generate a token.</p>
+        <form action="generate_token" method="post" novalidate>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <button type="submit">Generate token</button>
+        </form>
+        {%endif%}
+        {% if correct %}
+        <div id="result">{{ result }}</div>
+        <p>Make sure to copy your token. <br>You can check your ticket from 
+            <span>
+                <a href="/check_ticket">
+                    Here
+                </a>
+            </span> 
+        </p>
+        {%endif%}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+name: "cold-boot-2"
+author: "Yan1x0s"
+author_link: "https://github.com/Yanixos"
+
+category: forensics
+difficulty: medium
+
+description: |
+  > This is another cold boot attack but on a system using another algortithm of encryption.  
+  > Recover the primes  
+
+  **Author** : Yan1x0s
+
+value: 500
+type: dynamic
+
+tags:
+  - forensics
+  - crypto
+  - programming
+  
+extra:
+  initial: 500
+  decay: 8
+  minimum: 50
+
+flags:
+  - shellmates{ae20b24296a934e794020890ba4f9558}
+
+files:
+  - challenge.txt
+
+hints:
+  - "A word multiplication reveals a word !\n#That's my word"
+
+state: visible
+
+version: "0.1"

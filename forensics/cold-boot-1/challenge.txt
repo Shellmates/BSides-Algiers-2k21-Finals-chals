@@ -1,0 +1,38 @@
+MEMORY DUMP
+--------------------------
+002d970: 84cd 4845 adcf 7850 af31 a7a2 d46b cf52  ..HE..xP.1...k.R
+0002d980: 5d52 da0c dab7 c40a 73bb ae41 3239 e5e5  ]R......s..A29..
+0002d990: 5029 6fee 7266 5fe8 36a2 37cb fc61 4368  P)o.rf_.6.7..aCh
+0002d9a0: 7baf 3a68 d703 760d 3b81 1a65 ed67 9cbd  {.:h..v.;..e.g..
+0002d9b0: 6bd7 8419 c31e 2d9e bd8f 368e 3163 47d2  k.....-...6.1cG.
+0002d9c0: 8c40 0de5 a3eb 8c85 01a1 c240 88b2 1d2a  .@.........@...*
+
+0002d9d0: 1943 4cb3 82c3 c851 3596 74a3 e2d0 1dd6  .CL....Q5.t.....
+0002d9e0: 029b 6766 f871 2cc8 9074 9725 868e 215c  ..gf.q,..t.%..!\
+0002d9f0: 6608 1aed 5b44 8f2a 5152 8c54 11ac 9fcd  f...[D.*QR.T....
+0002da00: 574f 441b 8957 7b7a 9468 9fa4 210b 077d  WOD..W{z.h..!..}
+0002da10: 5eab fa8d d899 c362 5295 9291 c4f6 1667  ^......bR......g
+0002da20: cf92 140e 4f44 9707 b5ac 740f 5854 c91f  ....OD....t.XT..
+0002da30: f3c5 f2b5 649e 678c e0b2 c98e 5148 0bd5  ....d.g.....QH..
+0002da40: c81e f4ad 5875 7343 cd47 ad5d b352 53c7  ....XusC.G.].RS.
+0002da50: 4f33 bf2d 5fd8 d1dc 2248 8a40 43b7 a892  O3.-_..."H.@C...
+0002da60: 31dd ac91 d358 c512 6011 2f24 cd27 8b9b  1....X..`./$.'..
+0002da70: d14b 8b8f 11cd c609 326e e1b3 bd6f 5154  .K......2n...oQT
+0002da80: d1ca b1dd dc11 4b8b 85cb 2234 90ae 8cdc  ......K..."4....
+0002da90: 893e 7663 7ef8 1c09 0808 08d8 9511 0863  .>vc~..........c
+
+POTENTIAL AES ROUND KEYS DETECTED
+---------------------------------
+K[ 0] =    47 ?? ?? ca    e6 ?? 55 ??    ?? 83 ?? a6    ?? 34 ?? a0
+K[ 1] =    5e ed e? 5b    b8 0c b0 a?    ?5 8f 73 0?    ?? bb 5? af
+K[ 2] =    b6 ?4 ?c ed    0e ?? 2c 4?    db ?7 5? ?b    a2 ?? 04 e4
+K[ 3] =    7c 2? ?5 d7    72 fe d9 9?    ?9 a9 8? d8    0b ?? 82 3c
+K[ 4] =    1a 35 ?e fc    68 cb ?7 6f    c1 ?? ?? b7    ca 2? c3 8b
+K[ 5] =    ?6 ?b 23 8?    ae d0 e? e7    ?? b2 a5 50    a? 95 66 ?b
+K[ 6] =    ?c 2? 9a 8e    62 f? ?e 69    ?d 4a ?b 3?    a8 df ?d e2
+K[ 7] =    12 5? ?2 4c    70 aa 7c ?5    7d e0 a7 1c    d5 3f 1a fe
+K[ 8] =    e7 ?? ?? 4f    9? 5a c5 ?a    ea ba 62 76    3? 85 ?8 8?
+K[ 9] =    6b 4c 7d 3?    f? 16 b? 50    16 ac da ?6    2? ?9 a? ae
+K[10] =    f? ?6 99 9f    ?4 6? 21 cf    ?2 c? f? ?9    3b e5 59 ??
+
+Find the key and the flag is : shellmates{md5(key)}

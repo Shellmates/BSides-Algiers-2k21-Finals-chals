@@ -1,0 +1,33 @@
+name: "passparser"
+author: "jini"
+author_link: "https://github.com/jini0x"
+
+category: web
+difficulty: hard
+
+description: |
+  > All we know is that there are critical internal services on the ports [9000-9030]  
+
+  **Author :** jini
+
+connection_info: passparser.web.ctf.shellmates.club
+
+image: gcr.io/glowing-reserve-336013/passparser
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 8
+  minimum: 50
+
+flags:
+  - shellmates{SsRF_iS_THE_B3St}
+
+hints:
+  - "You're not supposed to find the internal services by heading to <http://passparser.web.ctf.shellmates.club:XXXX> where `XXXX` is a port between 9000 and 9030"
+
+state: visible
+
+version: "0.1"

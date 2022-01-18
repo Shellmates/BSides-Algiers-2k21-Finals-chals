@@ -1,0 +1,37 @@
+name: "safefree"
+author: "chenx3n"
+author_link: "https://github.com/malikDaCoda"
+
+category: pwn
+difficulty: hard
+
+description: |
+  > You probably heard about Use After Free, Double Free, Dangling pointers
+  > and all those terms that have been terrorizing glibc devs forever.  
+  > Guess what? You can forget all about that with our brand new innovation : `safefree`
+
+  **Author**: chenx3n
+
+connection_info: nc pwn.ctf.shellmates.club 1502
+
+image: gcr.io/glowing-reserve-336013/safefree
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 8
+  minimum: 50
+
+flags:
+  - shellmates{M4AAYb3_juSt_STIck_t0_tHE_OLD_WaYS}
+
+files:
+  - ./challenge/safefree
+  - ./lib/libc-2.27.so
+  - ./lib/ld-2.27.so
+
+state: visible
+
+version: "0.1"

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@tailwindcss/custom-forms@0.2.1/dist/custom-forms.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js" integrity="sha512-gtcrasYnyeB27+IejClswFlb/eggt+khRr+lLAeNcgg5x2ijlWaiBOPXZkwivNj15LaE6s9CzV57hsoTPrQ5xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Another note app</title>
+  </head>
+
+  <body class="bg-gray-50">
+    <header>
+      <div class="flex flex-row bg-gray-100 px-5 py-2">
+	<a href="/" class="hover:underline hover:text-blue-500 text-black py-1 px-4">
+	  Another note app
+	</a>
+      </div>
+    </header>
+
+    <div id="container" class="flex flex-col justify-center items-center relative z-20">
+      <form class="pt-6 pb-2 my-2 w-1/2" action="/" method="GET">
+	<div class="mb-8">
+	  <label class="block text-sm font-bold mb-2" for="note"> Note </label>
+	  <textarea id="input" autofocus class="form-textarea mt-1 block w-full" rows="5" name="note" placeholder="Note"></textarea>
+	</div>
+	<div class="block md:flex items-center justify-between">
+	  <button class="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded border-b-4 border-blue-500" type="submit">Create note</button>
+	</div>
+      </form>
+
+      <div id="container-output" class="flex flex-col justify-center items-center relative z-20">
+	<h1 class="text-center text-2xl text-black font-bold">Output</h1>
+      </div>
+
+      <form class="pt-6 pb-2 my-2 w-1/2" action="/report" method="POST">
+	<div class="mb-4">
+	  <label class="block text-sm font-bold mb-2" for="note"> URL </label>
+	  <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-500"
+            name="url"
+            type="text"
+            placeholder="http://another-note-app.web.ctf.shellmates.club/?note=hi"
+          />
+	</div>
+	<div class="block md:flex items-center justify-between">
+	  <button class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded border-b-4 border-yellow-500" type="submit">Report URL</button>
+	</div>
+      </form>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+
+</html>

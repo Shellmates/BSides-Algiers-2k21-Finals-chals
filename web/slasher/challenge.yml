@@ -1,0 +1,32 @@
+name: "slasher"
+author: "chenx3n"
+author_link: "https://github.com/malikDaCoda"
+
+category: web
+difficulty: medhard
+
+description: |
+  > One specific character can make the difference...  
+
+  **Note :** Flag is located at `/flag`  
+
+  **Author :** chenx3n
+
+connection_info: http://slasher.web.ctf.shellmates.club
+
+image: gcr.io/glowing-reserve-336013/slasher
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 8
+  minimum: 50
+
+flags:
+  - shellmates{d3F1Ni73Ly_nOT_uRls4Fe_Base64}
+
+state: hidden
+
+version: "0.1"

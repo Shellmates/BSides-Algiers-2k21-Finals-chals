@@ -1,0 +1,31 @@
+name: "Sigma"
+author: "Haithem"
+author_link: "https://github.com/HaithemLamri"
+
+category: crypto
+difficulty: easy
+
+description: |
+  > By combining sequences and series, we can make awesome cryptography algorithms,
+  > this is one of them, try to figure out how it works and break it to get the flag.  
+
+  **Author** : Haithem
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 8
+  minimum: 50
+
+flags:
+  - shellmates{Kn4p54ck_Cryp70_Sys73m}
+
+files:
+  - ./challenge.py
+  - ./output.txt
+
+state: visible
+
+version: "0.1"

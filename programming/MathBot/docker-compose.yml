@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: gcr.io/glowing-reserve-336013/mathbot
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+  

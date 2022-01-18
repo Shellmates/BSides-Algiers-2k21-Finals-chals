@@ -1,0 +1,39 @@
+name: "cold-boot-1"
+author: "Yan1x0s"
+author_link: "https://github.com/Yanixos"
+
+category: forensics
+difficulty: easy
+
+description: |
+  > During a forensics operation, you have been asked to perform a [cold boot attack](https://en.wikipedia.org/wiki/Cold_boot_attack).  
+  > You take the attacker's machine and use your freeze spray on the RAM. You plug your bootable USB and reboot the computer in order to perform the attack.  
+  > You take a memory dump and you use your script in order to find potential keys but you know that with this kind of operations the results aren't 100% correct.  
+  > Your goal is to recover the KEY. You already know what algorithm is that...  
+
+  **Author** : Yan1x0s
+
+value: 500
+type: dynamic
+
+tags:
+  - forensics
+  - crypto
+  
+extra:
+  initial: 500
+  decay: 8
+  minimum: 50
+
+flags:
+  - shellmates{1a9828ffb1cc9103c72fee534aec1bf1}
+
+files:
+  - challenge.txt
+
+hints:
+  - "AES round keys are just some simple math. Go-to Wikipedia"
+
+state: visible
+
+version: "0.1"

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include 'head.html' %}
+  </head>
+  <body>
+    <header>
+      {% include 'navbar.html' %}
+    </header>
+
+    <main>
+      <div class="center-div">
+	{% include 'flash.html' %}
+
+	{% block content %}{% endblock %}
+      </div>
+    </main>
+
+    {% include 'scripts.html' %}
+  </body>
+</html>

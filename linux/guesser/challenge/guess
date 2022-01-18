@@ -1,0 +1,32 @@
+#!/bin/bash
+
+declare "${2}"=X # To remove just for testing 
+
+PATH=$(/usr/bin/getconf PATH || /bin/kill $$)
+ 
+if [ ! -r secret ]; then
+    echo "secret file is missing"
+    exit 1
+fi
+
+secret=$(cat secret)
+
+if test !"$secret" = *" "* ; then  
+    echo "What have you done to my secret!"
+    exit 1 
+fi
+
+
+if [ -z "${1}" ]; then
+    echo "USAGE : $0 your_guess"
+    exit 1
+fi
+    
+if [ $secret = "${1}" ] ; then
+    echo "WOOAH! You are such a supper guesser, you will be a good ctf player"
+else
+    echo "WROOONG GUESS !!"
+fi
+ 
+exit 0
+    

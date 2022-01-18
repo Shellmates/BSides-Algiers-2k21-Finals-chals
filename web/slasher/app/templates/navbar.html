@@ -1,0 +1,24 @@
+<nav class="mb-5 navbar navbar-fixed navbar-inner header" style="padding: 0px 16px">
+    <div class="navbar-brand" style="display: table;">
+      <h1>
+        <a href="/" style="display: table-cell; vertical-align: middle; padding-left: 15px;">
+	  /
+	</a>
+      </h1>
+    </div>
+
+    <ul class="nav pull-right">
+      {% if session["uid"] %}
+        <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+        </li>
+      {% else %}
+        <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/register">Register</a>
+        </li>
+      {% endif %}
+    </ul>
+</nav>
